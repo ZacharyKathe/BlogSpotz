@@ -1,11 +1,12 @@
 <section class="card green">
  <form id="post">   
- <header> Project | {{name}}</header>
- <h4>Posted by | {{user.name}}</h4>
-
+ <header class="grey"> Project | {{name}}
+ <h4 class="grey">Posted by | {{user.name}}</h4>
+</header>
 <h5>{{description}}</h5>
-<input type="text" name="description" class="newPost">
-<button>Post 📮</button>
+<p>{{new_post}}</p>
+<input type="text" name="new_post" class="new_post" id="new_post">
+<button>Reply 📮</button>
 </form>
-
+<script src="js/reply.js"></script>
 </section>

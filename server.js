@@ -5,7 +5,7 @@ const path = require('path');
 const exphbs = require('express-handlebars');
 const User = require('./models/User');
 const Project = require('./models/Project');
-
+const Post = require('./models/Posts');
 
 require("dotenv").config();
 
@@ -45,6 +45,8 @@ app.get('/', (req,res) => {
 
 
 app.get('/profile', async(req, res)=>{
+  if (!req.session.user) {
+    return res.redirect("/") }
    try{ 
   const postData = await Project.findAll({
       include: [{

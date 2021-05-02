@@ -28,6 +28,12 @@ p{
     align-items: center;
 }
 
+.grey{
+    background-color: rgb(66, 65, 65);
+    color: white;
+}
+
+
 #loginForm{
     display: grid;
     justify-content: center;

@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { Project } = require('../../models');
+const Posts = require('../../models/Posts');
 
 
 
@@ -16,6 +17,18 @@ router.post('/post', async (req, res) => {
     res.status(400).json(err);
   }
 });
+
+router.post('/reply', async (req, res) =>{
+  try{
+    const newReply = await Posts.create({
+      ...req.body
+    })
+    console.log(newReply);
+    res.status(200).json(newReply);
+  } catch (err) {
+    res.status(400).json(err);
+  }
+})
 
 
 
