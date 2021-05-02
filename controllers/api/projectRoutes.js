@@ -4,7 +4,7 @@ const { Project } = require('../../models');
 
 
 
-router.post('/', async (req, res) => {
+router.post('/post', async (req, res) => {
   try {
     const newProject = await Project.create({
       ...req.body,

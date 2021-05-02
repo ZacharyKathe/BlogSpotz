@@ -63,6 +63,10 @@ app.get('/profile', async(req, res)=>{
   }
 });
 
+app.get('/newPost', (req, res)=>{
+  res.render('newPost');
+})
+
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));

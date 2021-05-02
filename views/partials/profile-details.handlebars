@@ -1,6 +1,11 @@
-<section class="card">
- <header> {{name}}</header>
+<section class="card green">
+ <form id="post">   
+ <header> Project | {{name}}</header>
+ <h4>Posted by | {{user.name}}</h4>
 
 <h5>{{description}}</h5>
-<input type="text">
+<input type="text" name="description" class="newPost">
+<button>Post 📮</button>
+</form>
+
 </section>

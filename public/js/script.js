@@ -24,29 +24,6 @@ document.querySelector("#loginForm").addEventListener("submit",event=>{
 })
 
 
-// async function formHandler(event){
-//     event.preventDefault();
-//     event.stopPropagation();
-//     const description = document.querySelector('.userpost').value;
-    
-//     console.log(description)
-//     const response = await fetch("api/projects/posts",{
-//         method: "POST",
-//         body:JSON.stringify(description),
-//         headers:{
-//             "Content-Type":"application/json"
-//         }
-//     });
-
-//     if (response.ok){
-//         document.location.replace('profile')
-//     } else {
-//         alert("failed to add")
-//     }
-// }
-
-// document.querySelector('.userpost').addEventListener('submit', formHandler);
-
 
 document.querySelector("#signupForm").addEventListener("submit",event=>{
     event.preventDefault();
@@ -73,3 +50,27 @@ document.querySelector("#signupForm").addEventListener("submit",event=>{
         }
     })
 })
+
+
+// async function formHandler(event){
+//     event.preventDefault();
+//     event.stopPropagation();
+//     const description = document.querySelector('.userpost').value;
+    
+//     console.log(description)
+//     const response = await fetch("api/projects/posts",{
+//         method: "POST",
+//         body:JSON.stringify(description),
+//         headers:{
+//             "Content-Type":"application/json"
+//         }
+//     });
+
+//     if (response.ok){
+//         document.location.replace('profile')
+//     } else {
+//         alert("failed to add")
+//     }
+// }
+
+// document.querySelector('.userpost').addEventListener('submit', formHandler);

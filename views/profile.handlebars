@@ -1,7 +1,11 @@
-<h1>Welcome to blogSpotz!</h1>
-<p>Post questions about a project 🤔</p>
-<p>link-up to contribute on projects 📲</p>
-<p>Projects
+<h1>Build Collaborative Projects ⌨</h1>
+<p>Post questions about a project 🤔 link-up to contribute on projects 📲</p>
+<nav>
+    <a href="/profile" class="green">Home</a>
+    <a href="/newPost" class="green">New Spot</a>
+    <a href="/logout" class="green">Log out</a>
+  </nav>
+<p class="green">
     {{#each post as |post|}}
     {{> profile-details}}
     {{/each}}
