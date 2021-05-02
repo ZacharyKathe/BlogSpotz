@@ -6,6 +6,7 @@ const exphbs = require('express-handlebars');
 const User = require('./models/User');
 const Project = require('./models/Project');
 
+
 require("dotenv").config();
 
 const sequelize = require('./config/connection');
@@ -29,7 +30,7 @@ const sess = {
 app.use(session(sess));
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public/')));
 app.engine('handlebars', exphbs({defaultLayout: "main"}));
 app.set('view engine', 'handlebars');
