@@ -5,21 +5,33 @@
 
 body{
     background-color: black;
-    color: rgb(108, 204, 172);
+    color:rgb(57, 233, 174);
 }
 nav{
+    display: flex;
+    justify-content: space-evenly;
     background-color: black;
-    color: rgb(108, 204, 172);
+    color: rgb(57, 233, 174);
 }
 
 
 p{
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .green{
-    background-color: rgb(108, 204, 172);
+    background-color: rgb(57, 233, 174);
     color: black;
+    width: 50vw;
+    margin-left: 250px;
+}
+
+.Btn{
+    background-color: rgb(57, 233, 174);
+    color: black;
+    margin-left: 8px;
+    padding: 6px;
+    border-radius: 3px;
 }
 
 .center{
@@ -33,6 +45,10 @@ p{
     color: white;
 }
 
+.header{
+    display: flex;
+}
+
 
 #loginForm{
     display: grid;
@@ -40,6 +56,12 @@ p{
     align-items: center;
 }
 #signupForm{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#newPostForm{
     display: grid;
     justify-content: center;
     align-items: center;
