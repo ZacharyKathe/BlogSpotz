@@ -18,13 +18,14 @@ router.post('/post', async (req, res) => {
   }
 });
 
-router.post('/reply', async (req, res) =>{
+router.post('/reply/:id', async (req, res) =>{
   try{
     const new_post = await Posts.create({
       ...req.body,
+      project_id: req.params.id
     })
     console.log(new_post)
-    res.status(200).json(new_post);
+    res.render("profile", {new_post});
   } catch (err) {
     res.status(400).json(err);
   }

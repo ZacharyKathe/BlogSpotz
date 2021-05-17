@@ -1,15 +1,15 @@
-<h1 class="center">Build Collaborative Projects ⌨</h1>
+<h1 class="center">Post a subject to blog about</h1>
 <p class="center">Post questions about a project 🤔 link-up to contribute on projects 📲</p>
 <nav>
     <a href="/profile" class="Btn">Home</a>
     <a href="/newPost" class="Btn">New Spot</a>
     <a href="/logout" class="Btn">Log out</a>
   </nav>
-<p class="green">
+<p>
     {{#each post as |post|}}
     {{> profile-details}}
     {{/each}}
-    {{#each reply as |reply|}}
+    {{#each new_post as |new_post|}}
     {{> profile-details}}
     {{/each}}
 </p>

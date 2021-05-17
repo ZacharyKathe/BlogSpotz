@@ -5,16 +5,15 @@ class Posts extends Model {}
 
 
 Posts.init({
-    id: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        primaryKey: true,
-        autoIncrement: true,
-      },
-      newPost: {
+
+      new_post: {
         type: DataTypes.STRING,
         allowNull: false,
-      }
+      },
+      project_id: {
+        type: DataTypes.INTEGER,
+        
+      },
   },
   {
     sequelize,

@@ -3,13 +3,14 @@ const session = require('express-session');
 const routes = require('./controllers');
 const path = require('path');
 const exphbs = require('express-handlebars');
-const User = require('./models/User');
-const Project = require('./models/Project');
-const Post = require('./models/Posts');
+const {User} = require('./models');
+const {Project} = require('./models');
+const {Posts} = require('./models');
 
 require("dotenv").config();
 
 const sequelize = require('./config/connection');
+
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
@@ -52,7 +53,9 @@ app.get('/profile', async(req, res)=>{
       include: [{
         model: User,
         attributes: ['name'],
-      }]
+      },
+      Posts
+    ]
     });
 
     const post = postData.map((user) => user.get({plain: true}));

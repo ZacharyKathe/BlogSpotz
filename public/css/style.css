@@ -4,34 +4,39 @@
 }
 
 body{
-    background-color: black;
-    color:rgb(57, 233, 174);
+    background-color: rgb(214, 206, 206);
+    color:rgb(8, 87, 59);
 }
 nav{
     display: flex;
     justify-content: space-evenly;
-    background-color: black;
-    color: rgb(57, 233, 174);
+    
+    
 }
 
 
 p{
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .green{
-    background-color: rgb(57, 233, 174);
+    background-color: rgb(8, 87, 59);
     color: black;
-    width: 50vw;
-    margin-left: 250px;
+    width: 60vw;
+    margin-left: 220px;
+    border-radius: 10px;
 }
 
 .Btn{
-    background-color: rgb(57, 233, 174);
+    display: flex;
+    justify-content: center;
+    background-color: rgb(254, 255, 255);
     color: black;
-    margin-left: 8px;
-    padding: 6px;
+    height: 30px;
+    font-size: 18px;
     border-radius: 3px;
+
+    width: 80px;
 }
 
 .center{
@@ -43,11 +48,22 @@ p{
 .grey{
     background-color: rgb(66, 65, 65);
     color: white;
+    border-radius: 10px;
 }
 
 .header{
     display: flex;
 }
+
+.white{
+    
+    color: white;
+}
+
+.new_post{
+    border-radius: 5px;
+}
+
 
 
 #loginForm{
@@ -67,4 +83,14 @@ p{
     align-items: center;
 }
 
+#span{
+    font-size: 8px;
+}
 
+
+@media screen and (max-width: 500px) {
+    main{
+        display: flex;
+       height: 100vh; 
+    }
+}
