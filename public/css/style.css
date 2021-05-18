@@ -93,10 +93,10 @@ p{
 
 
 @media screen and (max-width: 640px) {
-    .myMain{
-      background-color: rgb(20, 220, 70);
-      height: 100vh;
-    }
+ #newName{
+     height: 45px;
+     width: 100px;
+ }   
 }
 
 @media screen and (max-width: 1000px) {
@@ -156,5 +156,27 @@ p{
     #outterBox{
         margin-top: 70px;
     }
+    #newName{
+        height: 55px;
+        width: 270px;
+    }
+    #newDescription{
+        height: 55px;
+        width: 270px;
+    }
+    #newFunding{
+        height: 55px;
+        width: 270px;  
+    }
+    .newPostTitle{
+        font-size: 45px;
+    }
+    #newPostForm p{
+        font-size: 40px;
+    }
+    #postBtn{
+        height: 45px;
+        width: 270px;
+    } 
 }
 

@@ -12,10 +12,10 @@ Project.belongsTo(User, {
 });
 
 Posts.belongsTo(Project, {
-  foreignKey: 'projectId',
+  foreignKey: 'project_Id',
   onDelete: "CASCADE"
 })
 Project.hasMany(Posts, {
-  foreignKey: 'projectId',
+  foreignKey: 'project_Id',
 })
 module.exports = { User, Project, Posts };
