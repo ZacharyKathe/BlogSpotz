@@ -5,7 +5,7 @@
 
 body{
     background-color: rgb(214, 206, 206);
-    color:rgb(8, 87, 59);
+    color:darkcyan;
 }
 nav{
     display: flex;
@@ -20,7 +20,7 @@ p{
 }
 
 .green{
-    background-color: rgb(8, 87, 59);
+    background-color: darkcyan;
     color: black;
     width: 60vw;
     margin-left: 220px;
@@ -88,9 +88,73 @@ p{
 }
 
 
-@media screen and (max-width: 500px) {
-    main{
-        display: flex;
-       height: 100vh; 
+
+
+
+
+@media screen and (max-width: 640px) {
+    .myMain{
+      background-color: rgb(20, 220, 70);
+      height: 100vh;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    #loginEmail{
+      height: 40px;
+    }
+    #loginPassword{
+      height: 40px;
+    }
+    #signupUsername{
+      height: 40px;
+    }
+    #signupEmail{
+     height: 40px;
+    }
+    #signupPassword{
+     height: 40px;
+    }
+    #signUpBanner{
+        margin-top: 200px;
+        font-size: 24px;
+    }
+    #loginBanner{
+        margin-top: 60px;
+        font-size: 24px;
+    }
+    #loginBtn{
+        height: 35px;
+    }
+    #SignupBtn{
+        height: 35px;
+    }
+    #projects{
+        width: 90vw;
+        margin-left: 20px;
+        background-color: darkcyan;
+    }
+    #replyBtn{
+        height: 30px;
+        width: 100px;
+        font-size: 20px;
+    }
+    .reply{
+      display: flex;
+      justify-content: flex-end;
+    }
+    .new_post{
+        height: 30px;
+    }
+    .Btn{
+        display: flex;
+        width: 100px;
+        height: 50px;
+        align-items: center;
+        font-size: 24px;
+    }
+    #outterBox{
+        margin-top: 70px;
+    }
+}
+

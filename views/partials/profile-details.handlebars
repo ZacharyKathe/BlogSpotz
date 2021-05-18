@@ -1,9 +1,11 @@
-<section class="card green">
+<section class="card green" id="projects">
  <form class="post">   
  <header class="grey"> Topic | {{name}}
  <h4 class="grey">Posted by | {{user.name}}</h4>
 </header>
 <h5 data-project = {{id}} class="description">{{description}}</h5>
+<br/>
+<hr>
 <p>{{new_post}}</p>
 {{#each Posts}}
 <p class="white"> <span id="span">Reply:</span> {{new_post}}</p>
@@ -13,7 +15,7 @@
 <form class="reply">
     
 <input data-project = {{id}} type="text" name="new_post"  class="new_post">
-<button>Reply 📮</button>
+<button id="replyBtn">Reply 📮</button>
 </form>
 
 

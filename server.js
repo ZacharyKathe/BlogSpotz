@@ -77,24 +77,3 @@ app.get('/newPost', (req, res)=>{
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
-
-
-// app.get('/profile', async(req, res)=>{
-//   try{ 
-//  const postData = await User.findAll({
-//      include: [{
-//        model: Project,
-//        attributes: ['name', 'description'],
-//      }]
-//    });
-
-//    const post = postData.map((user) => user.get({plain: true}));
-//    console.log(post)
-//    res.render('profile', {
-//      post,
-//    })
-//  } catch (err) {
-//    console.log(err);
-//    res.status(500).json(err);
-//  }
-// });
