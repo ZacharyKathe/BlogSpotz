@@ -7,9 +7,10 @@ const Posts = require('../../models/Posts');
 
 router.post('/post', async (req, res) => {
   try {
+    console.log(req.session)
     const newProject = await Project.create({
       ...req.body,
-      user_id: req.session.user_id,
+      user_id: req.session.user.id,
     });
 
     res.status(200).json(newProject);
@@ -39,7 +40,7 @@ router.delete('/:id', async (req, res) => {
     const projectData = await Project.destroy({
       where: {
         id: req.params.id,
-        user_id: req.session.user_id,
+        user_id: req.session.user.id,
       },
     });
 

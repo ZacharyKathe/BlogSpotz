@@ -20,7 +20,7 @@ Posts.init({
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Posts',   
+    modelName: 'posts',   
   }
 );
 
