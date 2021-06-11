@@ -5,15 +5,15 @@
 </header>
 <h5 data-project = {{id}} class="description">{{description}}</h5>
 <br/>
+
 <hr>
-<p>{{new_post}}</p>
-{{#each Posts}}
+
+
+</form>
+{{#each posts}}
 <p class="white"> <span id="span">Reply:</span> {{new_post}}</p>
 {{/each}}
-</form>
-
 <form class="reply">
-    
 <input data-project = {{id}} type="text" name="new_post"  class="new_post">
 <button id="replyBtn">Reply 📮</button>
 </form>
