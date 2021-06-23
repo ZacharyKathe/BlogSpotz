@@ -3,5 +3,5 @@
 #### Working on allowing user to post replys on projects
 
 ![cover photo of app dashboard](https://github.com/ZacharyKathe/BlogSpotz/blob/main/public/images/cover.JPG)
-## Heroku is working on fixing their error with my account so the app is down...
+
 ### https://blogspotz444.herokuapp.com/
